@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <body>
+    <header class="header">
+      <div class="overlay" id="cart-section"></div>
+      <nav class="nav-bar sticky">
+        <div class="container">
+          <div class="content">
+            <div class="logo">
+              <!-- <img src="img/logo1.jpeg" alt="" class="logo-img"> -->
+              <h2>FIND YOURSELF <span class="logo-gym">GYM</span></h2>
+            </div>
+            <ul class="menu">
+              <a href="#cart-section">
+              <button class="btn" id="display-form">JOIN NOW</button>
+              </a>
+              <li class="nav-list">
+                <a href="#"
+                  ><span class="icon"
+                    ><i class="fa-solid fa-toggle-on"></i></span
+                  ><span class="disc">Mode</span></a
+                >
+              </li>
+              <li class="nav-list">
+                <a href="#capital-search"
+                  ><span class="icon"
+                    ><i class="fa-solid fa-location-dot"></i></span
+                  ><span class="disc">Cpaital</span></a
+                >
+              </li>
+              <li class="nav-list loginTo">
+                <a href="#"
+                  ><span class="icon"><i class="fa-solid fa-user"></i></span
+                  ><span class="disc">Login</span></a
+                >
+              </li>
+               <li class="nav-list user">
+                <a href="#"
+                  ><span class="icon"><i class="fa-solid fa-user"></i></span
+                  ><span class="disc" id="display-name">User</span></a
+                >
+              </li>
+               <li class="nav-list shopping-icon"><a href="#cart-section"><span class="icon shopping-num"><i class="fa-solid fa-cart-shopping "><span class="cart-name disc">Cart</span></i><span class="basket ">0 </span> </span></a></li>
+
+            
+              
+              <li class="nav-list">
+                <a href="#"
+                  ><span class="icon"
+                    ><i class="fa-solid fa-bars discription"></i></span
+                  ><span class="discription disc">Menu</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="heard-bottom">
+        <img src="img/header-photo2.webp" alt="" class="header-bottom-img" />
+      </div>
+      <div class="side-bar">
+        <div class="container">
+          <div class="side-bar-menu">
+            <div class="side-menu">
+              <i class="fa-solid fa-bars"></i>
+              <h3>MENU</h3>
+            </div>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <ul class="side-bar-list">
+            <input type="search" placeholder="Search" class="search" />
+            <li class="bar-list">Home</li>
+            <li class="bar-list">Exercise</li>
+            <li class="bar-list">Classes</li>
+            <li class="bar-list">Opening Hours</li>
+            <li class="bar-list">Contant</li>
+            <li class="bar-list">Forgotten PIN</li>
+            <li class="bar-list">Find Your Gym</li>
+            <li class="bar-list">Personal Training</li>
+          </ul>
+          <button class="btn side-btn">JOIN NOW</button>
+        </div>
+      </div>
+      <div class="login">
+        <img src="" alt="" />
+        <h3>Welcome back!</h3>
+        <input
+          type="email"
+          name="Email address"
+          id=""
+          placeholder="Email address"
+        />
+        <div class="password">
+          <input
+            type="password"
+            name="Password"
+            id="password"
+            placeholder="Password"
+          />
+          <span><i class="fa-solid fa-eye" onclick="toggle()"></i></span>
+        </div>
+        <h4>Forgotten Password ?</h4>
+        <button class="login-btn">LOGIN</button>
+      </div>
+      <div class="text-content">
+        <h2 class="fit">BE  <span class="fit-t">FIT</span></h2>
+        <h2 class="heathy">BE <span class="strong-t">STRONG</span> 
+        <h2 class="strong">BE  <span class="heathy-t">HEALTHY</span></h2></h2>
+      </div>
+    </header>
+        <aside id="join-now">
+  <div class="container">
+   
+    <form action="/" id="form">
+      <h5>First Name</h5>
+      <input type="text" name="" id="first-name" placeholder="Enter Your First Name" required>
+      <h5>Last Name</h5>
+      <input type="text" name="" id="last-name" placeholder="Enter Your Last Name">
+      <h5>Email Address</h5>
+      <input type="email" name="" id="email" placeholder="Enter Your Email">
+      <h5>Password</h5>
+      <input type="password" name="" id="password" placeholder="Enter your Password">
+      <input type="button" value="Sign Up"id="join">
+    </form>
+  </div>
+</aside>
+    <section class="sliders">
+      <div class="container ">
+        <div class="slider">
+          <div class="slide slide--1">
+            <div class="slide-content">
+              <img src="img/slide10.jpeg" alt="" class="slide-img" />
+              <p class="slide-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                blanditiis dolorum inventore eveniet hic, labore obcaecati eaque
+                exercitationem rem eligendi impedit facilis iure reprehenderit
+                voluptas laboriosam! Unde, omnis distinctio. Consequuntur!
+              </p>
+              <h6 class="name">CARL STEVEN</h6>
+              <p>Coach</p>
+            </div>
+          </div>
+          <div class="slide slide--2">
+            <div class="slide-content">
+              <img src="img/testimonials_02.jpg" alt="" class="slide-img" />
+              <p class="slide-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                blanditiis dolorum inventore eveniet hic, labore obcaecati eaque
+                exercitationem rem eligendi impedit facilis iure reprehenderit
+                voluptas laboriosam! Unde, omnis distinctio. Consequuntur!
+              </p>
+              <h6 class="name">CARL STEVEN</h6>
+              <p>Coach</p>
+            </div>
+          </div>
+          <div class="slide slide--3">
+            <div class="slide-content">
+              <img src="img/testimonials_03.jpg" alt="" class="slide-img" />
+              <p class="slide-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                blanditiis dolorum inventore eveniet hic, labore obcaecati eaque
+                exercitationem rem eligendi impedit facilis iure reprehenderit
+                voluptas laboriosam! Unde, omnis distinctio. Consequuntur!
+              </p>
+              <h6 class="name">CARL STEVEN</h6>
+              <p>Coach</p>
+            </div>
+          </div>
+          <button class="slider__btn slider__btn--left"><</button>
+          <button class="slider__btn slider__btn--right">></button>
+
+          <div class="dots"></div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="display">
+      <div class="container">
+        <div class="display__menu">
+          <ul class="display-list">
+            <li class="menu-list">
+              <button class="btn-list active">Classes</button>
+              <div class="list-img visible">
+                <img src="img/gym1.jpeg" alt="" /><img
+                  src="img/gym2.jpeg"
+                  alt=""
+                /><img src="img/gym3.jpeg" alt="" /><img
+                  src="img/gym4.jpeg"
+                  alt=""
+                /><img src="img/gym5.jpeg" alt="" /><img
+                  src="img/gym6.jpeg"
+                  alt=""
+                />
+                <img src="img/img7.jpeg" alt="" /><img
+                  src="img/img8.jpeg"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="menu-list">
+              <button class="btn-list bgc">Yoga</button>
+
+              <div class="list-img">
+                <img src="img/yoga1.jpeg" alt="" /><img
+                  src="img/yoga8.jpeg"
+                  alt=""
+                /><img src="img/yoga2.jpeg" alt="" /><img
+                  src="img/yoga3.jpeg"
+                  alt=""
+                /><img src="img/yoga4.jpeg" alt="" /><img
+                  src="img/yoga5.jpeg"
+                  alt=""
+                /><img src="img/yoga6.jpeg" alt="" /><img
+                  src="img/yoga7.jpeg"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="menu-list">
+              <button class="btn-list bgc">Health Suite</button>
+              <div class="list-img">
+                <img src="img/health suite1.jpeg" alt="" /><img
+                  src="img/health suite2.jpeg"
+                  alt=""
+                /><img src="img/health suite3.jpeg" alt="" /><img
+                  src="img/health suite4.jpeg"
+                  alt=""
+                /><img src="img/health suite5.jpeg" alt="" /><img
+                  src="img/health suite6.jpeg"
+                  alt=""
+                /><img src="img/health suite7.jpeg" alt="" /><img
+                  src="img/health suite8.jpeg"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="menu-list">
+              <button class="btn-list bgc">Nutrition</button>
+              <div class="list-img">
+                <img src="img/nutrition1.jpeg" alt="" /><img
+                  src="img/nutrition 2.jpeg"
+                  alt=""
+                /><img src="img/nutrition 3.jpeg" alt="" /><img
+                  src="img/nutrition 4.jpeg"
+                  alt=""
+                /><img src="img/nutrition 5.jpeg" alt="" /><img
+                  src="img/nutrition 6.jpeg"
+                  alt=""
+                /><img src="img/nutrition 7.jpeg" alt="" /><img
+                  src="img/nutrition 8.jpeg"
+                  alt=""
+                />
+              </div>
+            </li>
+          </ul>
+          <!-- <h2 class="discover">DISCOVER MORE</h2> -->
+        </div>
+      </div>
+    </section>
+    <section class="countdown">
+      <div class="offer">
+        <div class="offer-content">
+        <p class="best-offer">Best value 24/7 Gym<span class="offer-text">50% Discount</span></p>
+        
+        <h2 class="offer-title">Welcome TO THE GYM GROUP</h2>
+        <button class="btn join-btn">JOIN NOW</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="content">
+          <div class="box">
+            <h3 class="day timer">Time</h3>
+            <h3>Day</h3>
+          </div>
+          <div class="box">
+            <h3 class="hour timer">Time</h3>
+            <h3>Hour</h3>
+          </div>
+          <div class="box">
+            <h3 class="minute timer">Time</h3>
+            <h3>Minute</h3>
+          </div>
+          <div class="box">
+            <h3 class="second timer">Time</h3>
+            <h3>Second</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="cart">
+      <div class="container">
+        <div class="content">
+          <div class="shopping-item">
+            <h3 class="title">GOLD STANDARD</h3>
+            <img src="img/whey1.jpeg" alt="" class="item-img shopping-img" />
+            <span class="price"><span class="dollar">$</span> 23.00</span
+            ><button class="add-cart-btn 1">Add To Cart</button>
+          </div>
+          <div class="shopping-item">
+            <h3 class="title">B SIGNATURE WHEY</h3>
+            <img src="img/whey3.jpeg" alt="" class="item-img shopping-img" /><span
+              class="price"
+              ><span class="dollar">$</span> 56.00</span
+            ><button class="add-cart-btn 2">Add To Cart</button>
+          </div>
+           <div class="shopping-item">
+            <h3 class="title">MUSCLE MILK</h3>
+            <img src="img/whey4.jpeg" alt="" class="item-img shopping-img" /><span
+              class="price"
+              ><span class="dollar">$</span> 28.00</span
+            ><button class="add-cart-btn 2">Add To Cart</button>
+          </div>
+           <div class="shopping-item">
+            <h3 class="title">BIG WHEY</h3>
+            <img src="img/whey5.jpeg" alt="" class="item-img shopping-img" /><span
+              class="price"
+              ><span class="dollar">$</span> 32.00</span
+            ><button class="add-cart-btn 2">Add To Cart</button>
+          </div>
+           <div class="shopping-item">
+            <h3 class="title">MM WHEY</h3>
+            <img src="img/whey6.jpeg" alt="" class="item-img shopping-img" /><span
+              class="price"
+              ><span class="dollar">$</span> 29.00</span
+            ><button class="add-cart-btn 2">Add To Cart</button>
+          </div>
+           <div class="shopping-item">
+            <h3 class="title">HEALTHY WHEY</h3>
+            <img src="img/whey7.jpeg" alt="" class="item-img shopping-img" /><span
+              class="price"
+              ><span class="dollar">$</span> 42.00</span
+            ><button class="add-cart-btn 2">Add To Cart</button>
+          </div>
+        </div>
+        <div class="car-container" > 
+        <div class="cart-row" >
+          <div class="head-car-row" >
+          <span class="item">ITEM</span>
+          <span class="price">PRICE</span>
+          <span class="quantity">QUANTITY</span></div>
+        </div>
+        <div class="cart-items" >
+        </div>
+
+        <div class="cart-total" >
+          <strong class="total-title">Total</strong>
+          <span class="total-price">30</span>
+        </div>
+        <button class="btn-purchase" type="button">PURCHASE</button>
+        </div> 
+      </div>
+    </section>
+    <aside id="more-info">
+      <div class="container">
+        <div class="text-content">
+        <h3 class="info-title">
+          <span class="open ">+</span
+          >Section 1</h3><span class="close active-section">X</span>
+          <p class="info-text active-section ">
+           1- Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+            impedit? Hic explicabo, consequatur aperiam consectetur, cum id esse
+            quas possimus et maiores nobis facere! Pariatur sequi quia fugit
+            numquam voluptatibus!
+          </p>
+        </div>
+        <div class="text-content">
+        <h3 class="info-title">
+          <span class="open">+</span
+          >Section 2</h3><span class="close active-section">X</span>
+          <p class="info-text active-section ">
+           2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+            impedit? Hic explicabo, consequatur aperiam consectetur, cum id esse
+            quas possimus et maiores nobis facere! Pariatur sequi quia fugit
+            numquam voluptatibus!
+          </p>
+          </div>
+        <div class="text-content">
+        <h3 class="info-title">
+           <span class="open">+</span
+          >Section 3</h3><span class="close  active-section">X</span>
+          <p class="info-text active-section ">
+           3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+            impedit? Hic explicabo, consequatur aperiam consectetur, cum id esse
+            quas possimus et maiores nobis facere! Pariatur sequi quia fugit
+            numquam voluptatibus!
+          </p>
+          </div>
+       <div class="text-content">
+        <h3 class="info-title">
+           <span class="open">+</span
+          >Section 4</h3><span class="close active-section ">X</span>
+          <p class="info-text active-section ">
+           4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+            impedit? Hic explicabo, consequatur aperiam consectetur, cum id esse
+            quas possimus et maiores nobis facere! Pariatur sequi quia fugit
+            numquam voluptatibus!
+          </p>
+       </div>
+      </div>
+    </aside>
+ <section id="capital-search">
+      <div class="container">
+      <input type="text" name="" id="capital" placeholder="Enter the capital name">
+      <button class="capital-btn">Click</button>
+      <div class="countries"> 
+       </div> 
+       
+       </div>
+    </section> 
+     <footer>
+        <div class="container">
+            <div class="content">
+                <div class="footer-top">
+                     <img src="./logo-light_400x_1.png" alt=""> 
+                    <form >
+                      <div class="sub">
+                        <input type="email" placeholder="Your email address">
+                        <input type="submit" value="Subscribe"> 
+                        </div>
+                    </form>
+                    <div class="social-m">
+                        <i class=" fa-brands fa-twitter"></i>
+                        <i class=" fa-brands fa-facebook-f"></i>
+                        <i class=" fa-brands fa-google-plus-g"></i>
+                        <i class=" fa-brands fa-tumblr"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <hr>
+                <div class="container">
+                <div class="more-info">
+                    
+                <div class="more-d">
+                    <h4>Contact us</h4>
+                    <ul>
+                        <li>1203 Town Center Drive FL <br> 33458 USA
+                        </li>
+                        <li>+0000 123 456789</li>
+                        <li>info@example.com</li>
+                    </ul>
+                </div>
+                <div class="more-d">
+                    <h4>Help</h4>
+                    <ul>
+                        <li>Search</li>
+                        <li>Help</li>
+                        <li>Information</li>
+                        <li>Privacy Policy</li>
+                        <li>Shipping Details</li>
+                    </ul>
+                </div>
+                <div class="more-d">
+                    <h4>Support</h4>
+                    <ul>
+                        <li>Contact us</li>
+                        <li> About us</li>
+                        <li> Careers</li>
+                        <li>Refunds & Returns</li>
+                        <li>Deliveries</li>
+                    </ul>
+                </div>
+                <div class="more-d">
+                    <h4>Information</h4>
+                    <ul>
+                        <li>Advanced Search</li>
+                        <li> Search Terms</li>
+                        <li>Help & Faq's</li>
+                        <li>Store Location</li>
+                        <li>Orders & Returns</li>
+                    </ul>
+                </div>
+           
+            </div>
+        </div>
+        <hr>
+            
+            
+            <div class="footer-bottom">
+                <div class="container">
+                <span>Search</span>|<span>Help</span>|<span>Information</span>|
+                <span>Privacy Policy</span>|<span>Shipping Details</span>
+                <div class="payment">
+                    <div class="info">
+                        <h5>© 2022 GYM Design Themes</h5>
+                    </div>
+                    <div class="info ">
+                        <ul>
+                            <li><img src="img/images.png" alt=""></li>
+                            <li><img src="img/images1.png" alt=""></li>
+                            <li><img src="img/images2.jpeg" alt=""></li>
+                            <li><img src="img/images3.jpeg" alt=""></li>
+                            <li><img src="img/images5.jpeg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
